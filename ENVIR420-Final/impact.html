@@ -67,6 +67,8 @@
                         </div>
                     </div>
 
+                    <img src="assets/images/Chain.jpeg" alt="Cannabis Supply Chain" style="width: 50%; margin-top: 180px; float: right; padding-left: 30px;">
+
                     <h3 style="padding-top: 100px;">Cannabis Supply Chain</h3>
                     <p>
                         The cannabis supply chain is complex and involves multiple stages, each with its own set of challenges and environmental impacts. The five main stages—Cultivation, Manufacturing, Distribution, Transportation, and Retail—are all interconnected, with each stage depending on the successful completion of the previous one. For example, cultivation must produce high-quality cannabis that is then processed and packaged during the manufacturing stage before being distributed to retail outlets. Throughout this supply chain, Track and Trace systems are implemented to ensure that every product is compliant with state regulations, helping to maintain transparency and accountability within the industry (Distru, 2020).
@@ -112,6 +114,47 @@
                             <li>There aren't decades of agricultural research on how to optimize cannabis growing conditions in greenhouses and indoor facilities.</li>
                             <li>Most states where cannabis is legal, including Colorado, do not require cultivation facilities to meet specific energy standards, though Illinois and Massachusetts do.</li>
                         </ul>
+                        <section id="carbon-footprint-calculator" style="padding-top: 50px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="main_about_area p-t-3">
+                                            <div class="head_title m-y-3 wow fadeInUp">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h2 style="padding-bottom: 50px;">Carbon Footprint Calculator</h2>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <p>
+                                                            Cannabis production can have a large carbon footprint, seeing the numbers can help a person realize how much damage is actually being done to the environment
+                                                            This calculator uses estimates for pounds of CO2 emissions in based on multiple sources, including EIA data, EPA data, and a source by wint.ai.
+                                                        </p>
+                                                        <h6>Estimate the carbon footprint of your cannabis cultivation operation and explore ways to reduce it <a href="practices.html">here</a>.</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <form id="carbon-footprint-form">
+                                                <label for="energy-use">Energy Consumption (kWh):</label>
+                                                <input type="number" id="energy-use" name="energy-use" required><br><br>
+                        
+                                                <label for="fuel-use">Fuel Usage (gallons):</label>
+                                                <input type="number" id="fuel-use" name="fuel-use" required><br><br>
+                        
+                                                <label for="water-use">Water Usage (gallons):</label>
+                                                <input type="number" id="water-use" name="water-use" required><br><br>
+                        
+                                                <label for="waste-generated">Waste Generated (pounds):</label>
+                                                <input type="number" id="waste-generated" name="waste-generated" required><br><br>
+                        
+                                                <button type="button" onclick="calculateCarbonFootprint()">Calculate Footprint</button>
+                                            </form>
+                                            <p id="footprint-result"></p>
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                        </section> 
 
                     <h3>Policy Recommendations</h3>
                     <h4>Land Use</h4>
@@ -158,5 +201,29 @@
         <script src="assets/js/gmaps.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            function calculateCarbonFootprint() {
+                var energyUse = document.getElementById('energy-use').value;
+                var fuelUse = document.getElementById('fuel-use').value;
+                var waterUse = document.getElementById('water-use').value;
+                var wasteGenerated = document.getElementById('waste-generated').value;
+        
+                // Carbon emission factors (in pounds CO2e)
+                var energyFactor = 0.85;  // lbs CO2e per kWh based on EIA data
+                var fuelFactor = 19.64;   // lbs CO2e per gallon of gasoline based on EIA data
+                var waterFactor = 0.088;  // lbs CO2e per gallon of water based on Wint.ai data
+                var wasteFactor = 0.475;  // lbs CO2e per pound of waste (based on incineration data)
+        
+                // Calculate total carbon footprint
+                var carbonFootprint = (energyUse * energyFactor) +
+                                      (fuelUse * fuelFactor) +
+                                      (waterUse * waterFactor) +
+                                      (wasteGenerated * wasteFactor);
+        
+                document.getElementById('footprint-result').innerHTML = 
+                    "Estimated Carbon Footprint: " + carbonFootprint.toFixed(2) + " lbs CO2e.";
+            }
+        </script>   
     </body>
 </html>
+

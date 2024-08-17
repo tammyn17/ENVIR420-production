@@ -51,7 +51,7 @@
             </div>
 
             <!-- Sustainable Practices Section -->
-            <section id="sustainable-practices"style="padding-top: 150px;">
+            <section id="sustainable-practices" style="padding-top: 150px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -62,7 +62,7 @@
                                             <h2>Sustainable Practices</h2>
                                         </div>
                                         <div class="col-md-8">
-                                            <h6>Exploring best practices in water management, pesticide use, and energy efficiency for a more sustainable cannabis industry.</h6>
+                                            <h6>Exploring best practices in water management, pesticide use, energy efficiency, organic farming, and hydroponic systems for a more sustainable cannabis industry.</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -74,14 +74,44 @@
                                     and automated irrigation, specifically drip irrigation and moisture sensors, can help minimize water waste. These methods, combined with water treatment and reuse strategies, are essential
                                     in conserving water resources, particularly in drought-prone regions where large-scale cannabis cultivation can exacerbate water scarcity (Wartenberg, 2021).
                                 </p>
-
+                                <section id="sustainability-calculator" style="padding-top: 50px;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="main_about_area p-t-3">
+                                                    <div class="head_title m-y-3 wow fadeInUp">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <h2>Water Savings Calculator</h2>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <p>Drip irrigation is estimated to save about 30-50% more water than traditional spray heads. Many cannabis growers have successfully implemented drip irrigation systems and observed significant benefits. One case of a commercial cannabis grower (Greenleaf Farms), reported a 40% reduction in water usage, improved plant health, and a 15% increase in yield. This calculator assumes a 30% reduction in water due to this.</p>
+                                                                <h6 >Estimate your water savings by switching to drip irrigation.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p style="padding-top: 50px;">Enter your current water usage in gallons and the area of your cultivation in square feet to estimate potential water savings:</p>
+                                                    <form id="water-savings-form">
+                                                        <label for="current-usage">Current Water Usage (gallons):</label>
+                                                        <input type="number" id="current-usage" name="current-usage" required><br><br>
+                                                        <label for="area">Cultivation Area (square feet):</label>
+                                                        <input type="number" id="area" name="area" required><br><br>
+                                                        <button type="button" onclick="calculateSavings()">Calculate Savings</button>
+                                                    </form>
+                                                    <p id="savings-result"></p>
+                                                </div>
+                                                <hr />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section> 
                                 <h3>Pesticide Use</h3>
                                 <p>
                                     Pesticide use in cannabis cultivation requires careful consideration to ensure sustainability. Developing rigorous testing standards for
                                     contaminants in cannabis products is vital to protect both consumers and the environment. Certification schemes and educational programs
                                     can help producers adopt alternative pest control methods, reducing the reliance on harmful chemicals. By incentivizing the use of biologically
                                     derived pesticide products and implementing integrated pest management methods, the industry can mitigate the risks associated with pesticide misuse (MJH Life Sciences, 2023).
-                                    Additionally, beneficial insects can be introduced to the production process to reduce the need for synthetic pesticides and promote plant growth.
+                                    Additionally, beneficial insects can be introduced to the production process to reduce the need for synthetic pesticides and promote plant growth (FloraFlex, 2023).
                                 </p>
 
                                 <h3>Energy Efficiency</h3>
@@ -91,7 +121,17 @@
                                     existing standards and report on their energy usage. Prioritizing the use of energy-efficient light sources, renewable energy, and scheduling operations
                                     around peak demand times can significantly reduce the energy footprint of cannabis cultivation (Erickson, 2023). Particularly, energy-efficient LED lights 
                                     for cannabis cultivation can use less electricity, produce less heat, and allow better control of light. This combined with systems to monitor and optimize
-                                    energy use, using timers, sensors, and automated controls to regulate lights, HVAC, and other equipment, can significantly save energy.
+                                    energy use, using timers, sensors, and automated controls to regulate lights, HVAC, and other equipment, can significantly save energy (Cannabis Science Tech, 2023).
+                                </p>
+
+                                <h3>Organic Farming</h3>
+                                <p>
+                                    Organic farming in cannabis cultivation focuses on maintaining soil health, promoting biodiversity, and eliminating synthetic inputs. By utilizing composting, crop rotation, and natural fertilizers, organic farming practices ensure that cannabis is grown in a way that is both environmentally friendly and beneficial to the long-term sustainability of the agricultural ecosystem. This method also helps in reducing the carbon footprint of cannabis production (Thompson & Patel, 2023; FloraFlex, 2023).
+                                </p>
+
+                                <h3>Hydroponic Systems</h3>
+                                <p>
+                                    Hydroponic systems offer an innovative approach to cannabis cultivation by allowing plants to grow without soil, using nutrient-rich water solutions instead. This method greatly reduces water usage compared to traditional soil-based farming, making it particularly suitable for regions with water scarcity. Additionally, hydroponic systems enable precise control over nutrient delivery, which can enhance plant growth and yield while minimizing environmental impact (Anderson & Brown, 2022; MDPI, 2020).
                                 </p>
 
                                 <h3>Air Pollution Control</h3>
@@ -105,20 +145,20 @@
                                 <h3>Compost and Organic Fertilizers</h3>
                                 <p>
                                     Enhancing soil fertility while avoiding harmful chemicals is achievable through the use of compost of plant trimmings and organic fertilizers. These organic methods not only reduce the need for synthetic
-                                    fertilizers but also improve nutrient availability and plant growth, promoting a healthier and more sustainable growing environment, closing the loop in waste management.
+                                    fertilizers but also improve nutrient availability and plant growth, promoting a healthier and more sustainable growing environment, closing the loop in waste management (MDPI, 2020).
                                 </p>
 
                                 <h3>Sustainable Packaging</h3>
                                 <p>
                                     The choice of product packaging plays a significant role in sustainability. Opting for eco-friendly, compostable packaging made from recycled or
-                                    biodegradable materials can greatly reduce the environmental impact. Additionally, minimizing unnecessary packaging is key to lowering waste.
+                                    biodegradable materials can greatly reduce the environmental impact. Additionally, minimizing unnecessary packaging is key to lowering waste (Cannabis Science Tech, 2023).
                                 </p>
 
                                 <h3>Proper Disposal of Waste</h3>
                                 <p>
                                     Proper disposal of hazardous waste is crucial to avoid environmental contamination. Following local regulations for disposing of used nutrient solutions,
                                     chemical containers, and other hazardous materials ensures that these substances do not harm the ecosystem. Working with specialized waste management
-                                    companies can help in managing cannabis-related waste responsibly.
+                                    companies can help in managing cannabis-related waste responsibly (MDPI, 2020).
                                 </p>
 
                                 <h3>Protecting the Environment</h3>
@@ -126,23 +166,23 @@
                                     Preserving and protecting natural habitats around cannabis cultivation areas is vital for maintaining local ecosystems. Efforts such as keeping native
                                     plants, creating wildlife corridors, and minimizing disruption to the environment can help safeguard biodiversity. Additionally,
                                     adopting pollinator-friendly practices, like planting native flowering plants and creating habitats for bees and butterflies, supports the health of
-                                    the ecosystem.
+                                    the ecosystem (FloraFlex, 2023).
                                 </p>
 
                                 <h3>Producing Hemp</h3>
                                 <p>Marijuana and hemp belong to the same plant species (i.e., Cannabis sativa), but hemp is genetically different and also distinguished
                                     by its use and chemical makeup, (0.3% THC or less). Research has found that hemp has been re-discovered as a sustainable, high yielding
                                     industrial fiber crop that can help meet the high global demand for fibers. Additionally, the USDA can actually fund research on hemp, defined as cannabis with no more than 0.3% ∆9-tetrahydrocannabinol (THC)
-                                    on a dry-weight basis, thanks to legislation that Congress passed in 2018 to legalize hemp in the US. But the USDA still lacks the authority to fund research on cannabis that does not meet the hemp definition.</p>
+                                    on a dry-weight basis, thanks to legislation that Congress passed in 2018 to legalize hemp in the US. But the USDA still lacks the authority to fund research on cannabis that does not meet the hemp definition (MDPI, 2020).</p>
                                 <p>Here are some ways that hemp is sustainable:</p>
                                 <ul>
-                                    <li>Hemp fiber can be used for textiles, clothing, as biocomposites for automobiles, paper, building materials (hempcrete), animal bedding, and has potential as a bio-fuel crop too</li>
+                                    <li>Hemp fiber can be used for textiles, clothing, as biocomposites for automobiles, paper, building materials (hempcrete), animal bedding, and has potential as a bio-fuel crop too (MDPI, 2020).</li>
                                     <li>Bast fibers can account for 20-30% of the stalks and are used in the automotive and the paper industry. Hurd fibers, on the other hand, make up 70-80% of the stalk and typically
-                                        contain 20-30% lignin, which is used for used as a livestock bedding, and other construction applications including fiberboard</li>
-                                    <li>Hemp is one of the most efficient plants for converting atmospheric CO2 into biomass. It can absorb more CO2 per hectare than many other crops or even forests, thus playing a significant role in mitigating climate change.</li>
-                                    <li>Hemp biomass can be used to produce bioenergy, including biochar, biogas, and ethanol. These renewable energy sources help reduce reliance on fossil fuels, further supporting environmental sustainability.</li>
-                                    <li>Hemp generally requires fewer pesticides and herbicides compared to other crops due to its natural resistance to pests and its ability to suppress weeds. This reduces the chemical load on the environment, contributing to more sustainable agricultural practices.</li>
-                                    <li>Promotes resource efficiency. The plant's entire biomass can be utilized, minimizing waste.</li>
+                                        contain 20-30% lignin, which is used for used as a livestock bedding, and other construction applications including fiberboard (MDPI, 2020).</li>
+                                    <li>Hemp is one of the most efficient plants for converting atmospheric CO2 into biomass. It can absorb more CO2 per hectare than many other crops or even forests, thus playing a significant role in mitigating climate change (MDPI, 2020).</li>
+                                    <li>Hemp biomass can be used to produce bioenergy, including biochar, biogas, and ethanol. These renewable energy sources help reduce reliance on fossil fuels, further supporting environmental sustainability (MDPI, 2020).</li>
+                                    <li>Hemp generally requires fewer pesticides and herbicides compared to other crops due to its natural resistance to pests and its ability to suppress weeds. This reduces the chemical load on the environment, contributing to more sustainable agricultural practices (MDPI, 2020).</li>
+                                    <li>Promotes resource efficiency. The plant's entire biomass can be utilized, minimizing waste (MDPI, 2020).</li>
                                 </ul>
                                 
                                 <h3>Certification Programs</h3>
@@ -150,14 +190,14 @@
                                 <ul>
                                     <li>Sun+Earth Certified</li>
                                     <ul>
-                                        <li>Guarantees that Sun+Earth Certified cannabis is grown using regenerative organic farming practices without the application of pesticides and other toxic chemicals.</li>
-                                        <li>Ensures that workers have reasonable workplace conditions and the right to a living wage and community engagement, which ensures that farmers engage with and give back to their respective communities.</li>
+                                        <li>Guarantees that Sun+Earth Certified cannabis is grown using regenerative organic farming practices without the application of pesticides and other toxic chemicals (FloraFlex, 2023).</li>
+                                        <li>Ensures that workers have reasonable workplace conditions and the right to a living wage and community engagement, which ensures that farmers engage with and give back to their respective communities (FloraFlex, 2023).</li>
                                     </ul>
                                     <li>Clean Green Certified</li>
                                     <ul>
-                                        <li>Growing procedures are reviewed and confirmed that they meet the program requirements.</li>
-                                        <li>Source of water and electricity, soil erosion protection, border areas, pest/weed/disease control, are questioned and sometimes inspected.</li>
-                                        <li>Plants are examined for excess molds, mildews, pest problems, or other agricultural problems.</li>
+                                        <li>Growing procedures are reviewed and confirmed that they meet the program requirements (FloraFlex, 2023).</li>
+                                        <li>Source of water and electricity, soil erosion protection, border areas, pest/weed/disease control, are questioned and sometimes inspected (FloraFlex, 2023).</li>
+                                        <li>Plants are examined for excess molds, mildews, pest problems, or other agricultural problems (FloraFlex, 2023).</li>
                                     </ul>
                                 </ul>
                             </div>
@@ -166,7 +206,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
@@ -179,5 +218,14 @@
         <script src="assets/js/gmaps.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            function calculateSavings() {
+                var currentUsage = document.getElementById('current-usage').value;
+                var area = document.getElementById('area').value;
+                var savings = (currentUsage * 0.3).toFixed(2);  // Assuming a 70% reduction in water use
+                document.getElementById('savings-result').innerHTML = 
+                    "Estimated water savings with drip irrigation: " + savings + " gallons.";
+            }
+        </script>
     </body>
 </html>
